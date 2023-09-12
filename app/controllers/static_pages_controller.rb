@@ -11,4 +11,7 @@ class StaticPagesController < ApplicationController
 
   def help # helpアクション
   end
+
+  def about
+  end
 end

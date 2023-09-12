@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   # routes / route （ラウツと呼ぶ）
   get 'static_pages/home'
   get 'static_pages/help'
+  get  'static_pages/about'
   root "hello#index"
 end
