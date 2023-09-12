@@ -1,7 +1,14 @@
 class StaticPagesController < ApplicationController
-  def home
+
+  # app/views/コントローラ名（SC）/アクション名.html.erb
+  # （SC）：スネークケース：snake_case
+  # （CC）：キャメルケース：camelCase
+  def home 
+    # homeアクション
+    # => app/views/static_pages/home.html.erb
+    #
   end
 
-  def help
+  def help # helpアクション
   end
 end
