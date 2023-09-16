@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'users/new'
+  # get 'users/new'
   # static_pages はコントローラ名
   # roots / root （ルートと呼ぶ）
   # routes / route （ラウツと呼ぶ）
@@ -18,4 +18,5 @@ Rails.application.routes.draw do
   get "/help", to: "static_pages#help"
   get "/about", to: "static_pages#about"
   get "/contact", to: "static_pages#contact"
+  get "/signup", to: "users#new"
 end
