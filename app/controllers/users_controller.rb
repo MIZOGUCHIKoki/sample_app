@@ -29,6 +29,10 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       # success
+      flash[:success] = "Welcome to sample App!"
+      # redirect_to @user # GET /user/:id
+      # redirect_to user_path(@user) # 名前付きルート
+      redirect_to user_path(@user.id)
     else
       # Faild
       render 'new', status: :unprocessable_entity # HTTP RSP: 422 ブラウザとの対話
